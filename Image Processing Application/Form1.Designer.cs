@@ -52,9 +52,15 @@
             this.gLevelingButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBoxThreshold = new System.Windows.Forms.TextBox();
             this.ThresholdButton = new System.Windows.Forms.Button();
+            this.textBoxThreshold = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.hEqualizeButton = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.stretchContrastButton = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBefore)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAfter)).BeginInit();
@@ -62,6 +68,8 @@
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBoxBefore
@@ -79,7 +87,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(838, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -298,22 +306,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thresholding";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 29);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 13);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Threshold Value (T)";
-            // 
-            // textBoxThreshold
-            // 
-            this.textBoxThreshold.Location = new System.Drawing.Point(9, 45);
-            this.textBoxThreshold.Name = "textBoxThreshold";
-            this.textBoxThreshold.Size = new System.Drawing.Size(100, 20);
-            this.textBoxThreshold.TabIndex = 3;
-            // 
             // ThresholdButton
             // 
             this.ThresholdButton.Location = new System.Drawing.Point(119, 43);
@@ -324,11 +316,89 @@
             this.ThresholdButton.UseVisualStyleBackColor = true;
             this.ThresholdButton.Click += new System.EventHandler(this.ThresholdButton_Click);
             // 
+            // textBoxThreshold
+            // 
+            this.textBoxThreshold.Location = new System.Drawing.Point(9, 45);
+            this.textBoxThreshold.Name = "textBoxThreshold";
+            this.textBoxThreshold.Size = new System.Drawing.Size(100, 20);
+            this.textBoxThreshold.TabIndex = 3;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 29);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Threshold Value (T)";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.hEqualizeButton);
+            this.groupBox5.Controls.Add(this.label10);
+            this.groupBox5.Location = new System.Drawing.Point(630, 257);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(200, 89);
+            this.groupBox5.TabIndex = 9;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Histogram Equalization";
+            // 
+            // hEqualizeButton
+            // 
+            this.hEqualizeButton.Location = new System.Drawing.Point(119, 39);
+            this.hEqualizeButton.Name = "hEqualizeButton";
+            this.hEqualizeButton.Size = new System.Drawing.Size(75, 23);
+            this.hEqualizeButton.TabIndex = 4;
+            this.hEqualizeButton.Text = "Process";
+            this.hEqualizeButton.UseVisualStyleBackColor = true;
+            this.hEqualizeButton.Click += new System.EventHandler(this.hEqualizeButton_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 44);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(47, 13);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Equalize";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.stretchContrastButton);
+            this.groupBox6.Controls.Add(this.label11);
+            this.groupBox6.Location = new System.Drawing.Point(630, 349);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(200, 89);
+            this.groupBox6.TabIndex = 10;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Contrast Stretching - Not woking";
+            // 
+            // stretchContrastButton
+            // 
+            this.stretchContrastButton.Location = new System.Drawing.Point(119, 39);
+            this.stretchContrastButton.Name = "stretchContrastButton";
+            this.stretchContrastButton.Size = new System.Drawing.Size(75, 23);
+            this.stretchContrastButton.TabIndex = 4;
+            this.stretchContrastButton.Text = "Process";
+            this.stretchContrastButton.UseVisualStyleBackColor = true;
+            this.stretchContrastButton.Click += new System.EventHandler(this.stretchContrastButton_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 44);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Stretch";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(838, 450);
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -353,6 +423,10 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,6 +461,12 @@
         private System.Windows.Forms.Button ThresholdButton;
         private System.Windows.Forms.TextBox textBoxThreshold;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button hEqualizeButton;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button stretchContrastButton;
+        private System.Windows.Forms.Label label11;
     }
 }
 
