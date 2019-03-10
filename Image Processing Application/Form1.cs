@@ -350,6 +350,30 @@ namespace Image_Processing_Application
             //return destImage;
         }
 
+        private void pictureBoxBefore_Click(object sender, EventArgs e)
+        {
+            MouseEventArgs me = (MouseEventArgs)e;
+            base.OnMouseHover(me);
+            int x, y;
+            x = me.X;
+            y = me.Y;
+
+            textBoxX.Text = x.ToString();
+            textBoxY.Text = y.ToString();
+        }
+
+        private void pictureBoxAfter_Click(object sender, EventArgs e)
+        {
+            MouseEventArgs me = (MouseEventArgs)e;
+            base.OnMouseHover(me);
+            int x, y;
+            x = me.X;
+            y = me.Y;
+
+            textBoxX.Text = x.ToString();
+            textBoxY.Text = y.ToString();
+        }
+
         private void gLevelingButton_Click(object sender, EventArgs e)
         {
             int rValue, gValue, bValue, grValue;

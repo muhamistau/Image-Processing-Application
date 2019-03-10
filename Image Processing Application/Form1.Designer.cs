@@ -63,6 +63,11 @@
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBoxX = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxY = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBefore)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAfter)).BeginInit();
@@ -72,16 +77,19 @@
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBoxBefore
             // 
+            this.pictureBoxBefore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxBefore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxBefore.Location = new System.Drawing.Point(12, 51);
             this.pictureBoxBefore.Name = "pictureBoxBefore";
             this.pictureBoxBefore.Size = new System.Drawing.Size(200, 200);
             this.pictureBoxBefore.TabIndex = 0;
             this.pictureBoxBefore.TabStop = false;
+            this.pictureBoxBefore.Click += new System.EventHandler(this.pictureBoxBefore_Click);
             // 
             // menuStrip1
             // 
@@ -110,12 +118,14 @@
             // 
             // pictureBoxAfter
             // 
+            this.pictureBoxAfter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxAfter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxAfter.Location = new System.Drawing.Point(218, 51);
             this.pictureBoxAfter.Name = "pictureBoxAfter";
             this.pictureBoxAfter.Size = new System.Drawing.Size(200, 200);
             this.pictureBoxAfter.TabIndex = 2;
             this.pictureBoxAfter.TabStop = false;
+            this.pictureBoxAfter.Click += new System.EventHandler(this.pictureBoxAfter_Click);
             // 
             // label1
             // 
@@ -377,6 +387,7 @@
             // 
             // stretchContrastButton
             // 
+            this.stretchContrastButton.Enabled = false;
             this.stretchContrastButton.Location = new System.Drawing.Point(119, 39);
             this.stretchContrastButton.Name = "stretchContrastButton";
             this.stretchContrastButton.Size = new System.Drawing.Size(75, 23);
@@ -396,27 +407,73 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Location = new System.Drawing.Point(426, 51);
+            this.groupBox7.Location = new System.Drawing.Point(519, 51);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(406, 99);
+            this.groupBox7.Size = new System.Drawing.Size(313, 99);
             this.groupBox7.TabIndex = 11;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Histogram Before";
             // 
             // groupBox8
             // 
-            this.groupBox8.Location = new System.Drawing.Point(426, 156);
+            this.groupBox8.Location = new System.Drawing.Point(519, 156);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(406, 99);
+            this.groupBox8.Size = new System.Drawing.Size(313, 99);
             this.groupBox8.TabIndex = 12;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Histogram After";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.label13);
+            this.groupBox9.Controls.Add(this.textBoxY);
+            this.groupBox9.Controls.Add(this.label12);
+            this.groupBox9.Controls.Add(this.textBoxX);
+            this.groupBox9.Location = new System.Drawing.Point(426, 51);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(87, 200);
+            this.groupBox9.TabIndex = 12;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Coordinate";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 82);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(14, 13);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "X";
+            // 
+            // textBoxX
+            // 
+            this.textBoxX.Location = new System.Drawing.Point(33, 79);
+            this.textBoxX.Name = "textBoxX";
+            this.textBoxX.Size = new System.Drawing.Size(48, 20);
+            this.textBoxX.TabIndex = 0;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 120);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(14, 13);
+            this.label13.TabIndex = 15;
+            this.label13.Text = "Y";
+            // 
+            // textBoxY
+            // 
+            this.textBoxY.Location = new System.Drawing.Point(33, 117);
+            this.textBoxY.Name = "textBoxY";
+            this.textBoxY.Size = new System.Drawing.Size(48, 20);
+            this.textBoxY.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(844, 450);
+            this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
@@ -432,7 +489,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Image Processing Application (140810160062)";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBefore)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -449,6 +506,8 @@
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -491,6 +550,11 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBoxX;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBoxY;
     }
 }
 
