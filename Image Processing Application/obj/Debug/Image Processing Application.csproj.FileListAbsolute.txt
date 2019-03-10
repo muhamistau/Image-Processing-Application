@@ -1,0 +1,10 @@
+C:\Users\islam\source\repos\Image Processing Application\Image Processing Application\bin\Debug\Image Processing Application.exe.config
+C:\Users\islam\source\repos\Image Processing Application\Image Processing Application\bin\Debug\Image Processing Application.exe
+C:\Users\islam\source\repos\Image Processing Application\Image Processing Application\bin\Debug\Image Processing Application.pdb
+C:\Users\islam\source\repos\Image Processing Application\Image Processing Application\obj\Debug\Image Processing Application.csprojAssemblyReference.cache
+C:\Users\islam\source\repos\Image Processing Application\Image Processing Application\obj\Debug\Image_Processing_Application.Form1.resources
+C:\Users\islam\source\repos\Image Processing Application\Image Processing Application\obj\Debug\Image_Processing_Application.Properties.Resources.resources
+C:\Users\islam\source\repos\Image Processing Application\Image Processing Application\obj\Debug\Image Processing Application.csproj.GenerateResource.cache
+C:\Users\islam\source\repos\Image Processing Application\Image Processing Application\obj\Debug\Image Processing Application.csproj.CoreCompileInputs.cache
+C:\Users\islam\source\repos\Image Processing Application\Image Processing Application\obj\Debug\Image Processing Application.exe
+C:\Users\islam\source\repos\Image Processing Application\Image Processing Application\obj\Debug\Image Processing Application.pdb
