@@ -61,6 +61,8 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.stretchContrastButton = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBefore)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAfter)).BeginInit();
@@ -87,7 +89,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(838, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(844, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -299,7 +301,7 @@
             this.groupBox4.Controls.Add(this.ThresholdButton);
             this.groupBox4.Controls.Add(this.textBoxThreshold);
             this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Location = new System.Drawing.Point(424, 257);
+            this.groupBox4.Location = new System.Drawing.Point(426, 257);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(200, 181);
             this.groupBox4.TabIndex = 8;
@@ -336,7 +338,7 @@
             // 
             this.groupBox5.Controls.Add(this.hEqualizeButton);
             this.groupBox5.Controls.Add(this.label10);
-            this.groupBox5.Location = new System.Drawing.Point(630, 257);
+            this.groupBox5.Location = new System.Drawing.Point(632, 257);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(200, 89);
             this.groupBox5.TabIndex = 9;
@@ -366,7 +368,7 @@
             // 
             this.groupBox6.Controls.Add(this.stretchContrastButton);
             this.groupBox6.Controls.Add(this.label11);
-            this.groupBox6.Location = new System.Drawing.Point(630, 349);
+            this.groupBox6.Location = new System.Drawing.Point(632, 349);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(200, 89);
             this.groupBox6.TabIndex = 10;
@@ -392,11 +394,31 @@
             this.label11.TabIndex = 2;
             this.label11.Text = "Stretch";
             // 
+            // groupBox7
+            // 
+            this.groupBox7.Location = new System.Drawing.Point(426, 51);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(406, 99);
+            this.groupBox7.TabIndex = 11;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Histogram Before";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Location = new System.Drawing.Point(426, 156);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(406, 99);
+            this.groupBox8.TabIndex = 12;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Histogram After";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(838, 450);
+            this.ClientSize = new System.Drawing.Size(844, 450);
+            this.Controls.Add(this.groupBox8);
+            this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -467,6 +489,8 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button stretchContrastButton;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox groupBox8;
     }
 }
 
